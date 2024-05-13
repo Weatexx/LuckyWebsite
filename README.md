@@ -7,7 +7,7 @@ AdminPanel, Giriş, Kayıt ve Canlı Destek özellikleri vardır.
 Tamamiyle eğitim amaçlı yapılmıştır. Üzerinde yapılan değişikliklerin sorumluluğu kullanıcıların kendisine aittir.
 
 (ENG)
-Website with Frontend, Backend and Database written.
+Website with Frontend, Backend and Database.
 The site was written completely verbatim, no copying tools or similar tools were used.
 It has AdminPanel, Login, Registration and Live Support features.
 It was made entirely for educational purposes. The responsibility for any changes made to it belongs to the users.
