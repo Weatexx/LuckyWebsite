@@ -1,0 +1,170 @@
+@model holiganbet.Models.AdminViewModels.UsersVM
+
+<div class="pc d-none d-md-none d-lg-block">
+    <!-- WRAPPER -->
+    <div class="container-fluid my-5">
+        <div class="wrapper"
+            style=" background-color: white; margin-top: 50px; margin-left: 140px; margin-right: 130px; max-width: 748px; max-height: 950px; ">
+
+            <form method="post" style="margin-left: 170px; padding-top: 85px; max-width: 400px;">
+                @Html.AntiForgeryToken()
+
+                <h6>Hesap Detayları</h6>
+                <div class="form-group">
+                    <label style="font-size: small; ">Eposta: </label>
+                    <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <label for="exampleInputPassword1" style="font-size: small; margin-top: 20px;  ">Kullanıcı
+                        Adı:</label>
+                    <input asp-for="Username" type="text" class="form-control" id="exampleInputPassword1"
+                        placeholder="">
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                    <label style="font-size: small; margin-top: 20px;  ">Şifre: </label>
+                    <input asp-for="Password" type="password" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                    <div class="row">
+                        <div class="col">
+                            <label style="font-size: small; margin-top: 20px;  ">İsim: </label>
+                            <input asp-for="Name" type="text" class="form-control" placeholder="">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col">
+                            <label style="font-size: small; margin-top: 20px;  ">Soyad: </label>
+                            <input asp-for="Surname" type="text" class="form-control" placeholder="">
+                            <span asp-validation-for="Surname" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <p style=" font-style: italic; margin-top: 20px;  font-size: x-small;">Hesap güvenliğiniz için
+                        bilgilerinizin
+                        doğruluğu önemlidir. Lütfen formu eksiksiz doldurunuz. Bilgileriniz 256 bit şifreleme ile
+                        korunmaktadır.
+                    </p>
+                    <label style="font-size: small; ">Doğum Tarihi: </label>
+                    <input type="date" id="start"
+                        style="border: 1px solid rgb(220, 220, 220); padding-inline: 10px; min-width: 400px; min-height: 45px; border-radius: 8px; margin-top: 6px;"
+                        name="trip-start" value="1999-02-21" />
+                    <span class="text-danger"></span>
+
+                    <button type="submit"
+                        style="min-width: 400px; margin-top: 25px; border-radius: 0px; min-height: 50px; background-color: #FFD43B; color: white; font-weight: bold;"
+                        class="btn">Kayıt Ol</button>
+
+                    <p style=" padding-top: 30px; font-size: small">Kayıt ol butonuna basıldığında <a
+                            href="genelkurallarvesartlar.html" style="color: #FFD43B; text-decoration: none;">Kurallar &
+                            Şartlar</a>
+                        tarafınızdan kabul edilmiş sayılacaktır</p>
+            </form>
+
+            <img src="/img/uyeol.jpg" class="img-fluid"
+                style=" max-block-size: 600px; margin-left: 600px; margin-top: -715px; max-height: 750px; max-width: 370px; "
+                alt="">
+        </div>
+    </div>
+</div>
+
+<div class="mobil d-block d-sm-block d-md-none">
+    <div class="container-fluid" style="background-color: white;">
+        <div class="row ePosta">
+            <h6 class="px-3 mt-4">Hesap Detayları</h6>
+            <div class="col-12">
+                <p style="font-size: 14px;" for="epostaForm" class="mx-1 form-label"><sup
+                        style="color: red;">*</sup>Eposta:
+                </p>
+                <input style="height: 42px;" type="email" class="form-control" id="epostaForm">
+            </div>
+        </div>
+
+        <div class="row kullaniciAdi">
+            <div class="col-12 mt-4">
+                <p style="font-size: 14px;" for="kullaniciAdi" class="mx-1 form-label"><sup
+                        style="color: red;">*</sup>Kullanıcı Adı:</p>
+                <input style="height: 42px;" type="text" class="form-control" id="kullaniciAdiForm">
+            </div>
+        </div>
+
+        <div class="row sifre">
+            <div class="col-12 mt-4">
+                <p style="font-size: 14px;" for="sifreForm" class="form-label"><sup style="color: red;">*</sup>Şifre:
+                </p>
+                <div class="input-group">
+                    <input type="password" style="height: 42px;" class="form-control" id="sifreForm">
+                    <div class="input-group-append">
+                        <button class="btn"
+                            style="height: 100%; border-radius: 1px; border: 1px solid rgb(212, 212, 212);"
+                            type="button" id="togglePassword">
+                            <i class="fas fa-eye" id="eyeIcon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-4">
+                <p style="font-size: 14px;" for="sifreTekrarForm" class="mx-1 form-label"><sup
+                        style="color: red;">*</sup>Şifrenizi Tekrar Giriniz:</p>
+                <input style="height: 42px;" type="text" class="form-control" id="sifreTekrarForm">
+            </div>
+        </div>
+
+        <div class="row adsoyad mt-4">
+            <div class="col-6">
+                <p style="font-size: 14px;" class="mx-1 form-label"><sup style="color: red;">*</sup>İsim:</p>
+                <input style="height: 42px;" type="text" class="form-control">
+            </div>
+            <div class="col-6">
+                <p style="font-size: 14px;" class="mx-1 form-label"><sup style="color: red;">*</sup>Soyad:</p>
+                <input style="height: 42px;" type="text" class="form-control">
+            </div>
+            <em style="color: rgb(69, 69, 69); font-size: 10px;" class="mt-3">
+                Hesap güvenliğiniz için bilgilerinizin doğruluğu önemlidir. Lütfen formu eksiksiz doldurunuz.
+                Bilgileriniz
+                256
+                bit şifreleme ile korunmaktadır.
+            </em>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <p style="font-size: 14px;" class="mx-1 form-label"><sup style="color: red;">*</sup>Doğum Tarihi:</p>
+                <input type="date" id="start"
+                    style="width: 100%; padding-inline: 10px; height: 40px; border-radius: 10px; border: 1px solid rgb(199, 199, 199);"
+                    name="trip-start" value="2006-02-21" min="2006-02-21" max="" />
+
+                <button class="btn mt-4"
+                    style="height: 50px; width: 100%; font-weight: bold; background-color: #FFD43B; color: white;"
+                    type="submit">
+                    Kayıt Ol
+                </button>
+
+                <p style="font-size: 12px;" class="mx-4 mt-3">Kayıt ol butonuna basıldığında <a
+                        href="genelkurallarvesartlar.html" style="color: #FFD43B; text-decoration: none;">Kurallar &
+                        Şartlar</a>tarafınızdan kabul edilmiş sayılacaktır</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Şifre tekrar alanını kontrol etmek için
+        $('#sifreTekrarForm').blur(function () {
+            // İlk şifre alanının değerini al
+            var sifre = $('#sifreForm').val();
+            // Şifre tekrar alanının değerini al
+            var sifreTekrar = $(this).val();
+            // Şifreler aynı değilse
+            if (sifre !== sifreTekrar) {
+                // Kullanıcıya uyarı mesajı göster
+                alert("Şifreler eşleşmiyor. Lütfen aynı şifreyi tekrar girin.");
+                // Şifre tekrar alanını temizle
+                $(this).val('');
+                // Şifre tekrar alanına focus yap
+                $(this).focus();
+            }
+        });
+    });
+</script>

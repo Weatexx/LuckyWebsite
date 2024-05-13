@@ -1,0 +1,209 @@
+@{
+  ViewData["Title"] = "Bahis";
+}
+
+@{
+  Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="pc d-none d-md-none d-lg-block">
+  <!-- Ödeme Yöntemleri -->
+  <div class="container-fluid justify-content-center my-5"
+    style=" background-color: white; width: 1100px; height: 100%;">
+    <div class="row justify-content-center">
+
+      <nav class="navbar navbar-expand-lg py-3 bg-dark" style="border-radius: 0 0 6px 6px;">
+        <div class="container-md">
+          <a href="/Login/Odemeler"><button type="button" class="btn btn-success">Vazgeç</button></a>
+        </div>
+      </nav>
+      <div class="container-md pt-3 ms-2 ">
+        <img src="img/havalelogo.png" alt="">
+        <hr>
+      </div>
+      <div class="px-3">
+        <div class="alert alert-warning  " role="alert" style="color: rgb(60, 60, 60);">
+          Lütfen aşağıdaki listeden ödeme yapacağınız bankayı seçin ve açılan banka hesap bilgilerine yatırım
+          yapmak istediğiniz tutarı gönderin ve <strong>'Ödemeyi Yaptım</strong> tuşuna tıklayarak işleminizi
+          tamamlayın.
+        </div>
+        <div class="alert alert-danger" role="alert" style="color: rgb(60, 60, 60);">
+          Ödeme işlemini gerçekleştirmeden lütfen aşağıdaki formu doldurup göndermeyin
+        </div>
+        <div class="alert alert-danger" role="alert" style="color: rgb(60, 60, 60);">
+          DİKKAT: Ödeme açıklamasına sadece adınızı soyadınızı yazın. <strong>Web sitemizin adını kesinlikle
+            yazmayın.</strong>
+        </div>
+        <h6>Ödeme Yapılacak Banka</h6>
+        <div class="dropdown  ">
+          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Bankalar
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Garanti Bankası</a></li>
+            <li><a class="dropdown-item" href="#">Enpara</a></li>
+            <li><a class="dropdown-item" href="#">İş Bankası</a></li>
+            <li><a class="dropdown-item" href="#">Deniz Bank </a></li>
+            <li><a class="dropdown-item" href="#">Ziraat Bankası </a></li>
+            <li><a class="dropdown-item" href="#">Akbank </a></li>
+          </ul>
+        </div>
+        <div class="pt-3">
+          <div class="alert alert-success " role="alert">
+            <h5>Banka Bilgileri</h5>
+            <hr>
+            <h5>Hesap Sahibi:</h5>
+            <hr>
+            <h5>Iban:</h5>
+          </div>
+        </div>
+        <div class="row adsoyad">
+          <h6>Ödeme Yöntemleri</h6>
+          <div>
+            <p style="font-size: 14px; font-size: medium;  " for="AdsoyadForm" class="mx-1 form-label pt-2 "><sup
+                style="color: red;">*</sup>Ad Soyad
+            </p>
+            <input style="height: 42px;" type="" class="form-control" id="AdsoyadForm">
+          </div>
+        </div>
+        <div class="row pt-3 telefon">
+          <div>
+            <p style="font-size: 14px; font-size: medium;  " for="telefonForm" class="mx-1 form-label  ">
+              <sup style="color: red;">*</sup>Telefon
+            </p>
+            <input style="height: 42px;" type="number" class="form-control" id="TelefonForm">
+          </div>
+        </div>
+        <div class="row  pt-3 Tutar">
+          <div>
+            <p style="font-size: 14px; font-size: medium;  " for="TutarForm" class="mx-1 form-label  "><sup
+                style="color: red;">*</sup>Tutar
+            </p>
+            <input style="height: 42px;" type="" class="form-control" id="TutarForm">
+          </div>
+        </div>
+        <div class="row  pt-3 Not">
+          <div>
+            <p style="font-size: 14px; font-size: medium;  " for="NotForm" class="mx-1 form-label  "><sup
+                style="color: red;">*</sup>Not
+            </p>
+            <input style="height: 42px;" type="email" class="form-control" id="NotForm">
+          </div>
+        </div>
+        <div class="pt-3 py-3 ">
+          <button type="button" class="btn btn-primary p-3 col-12">Ödemeyi Yaptım</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobil d-block d-sm-block d-md-none">
+  <div class="container-fluid">
+    <div class="row head justify-content-center ">
+      <div class="col-11 mt-2"
+        style=" border-bottom: 7px solid #E14956; height: 70px; border-radius: 5px 5px 0 0; background-color: #34393D; ">
+        <a href="/Login/Odemeler"><button type="button" class="mt-3 btn btn-success">Vazgeç</button></a>
+      </div>
+    </div>
+    <div class="row logo justify-content-center">
+      <div class="col-11" style="border-bottom: 3px solid rgba(222, 222, 222, 0.484); background-color: #ffffff;">
+        <img src="img/havalelogo.png" class="mt-2 mb-2 img-fluid" width="80px" alt="">
+      </div>
+    </div>
+    <div class="row notes justify-content-center">
+      <div class="col-11" style=" background-color: #ffffff;">
+        <p style="background-color: #FEF8DE;" class="mt-3 p-4">Lütfen aşağıdaki listeden ödeme yapacağınız bankayı seçin
+          ve açılan banka hesap bilgilerine yatırım yapmak istediğiniz tutarı gönderin ve ‘Ödemeyi Yaptım’ tuşuna
+          tıklayarak işleminizi tamamlayın.</p>
+      </div>
+      <div class="col-11" style=" background-color: #ffffff;">
+        <p style="background-color: #F9C7C7;" class="p-2">Ödeme işlemini gerçekleştirmeden Lütfen aşağıdaki formu
+          doldurup göndermeyin.
+        </p>
+      </div>
+      <div class="col-11" style=" background-color: #ffffff;">
+        <p style="background-color: #F9C7C7;" class="p-2">DİKKAT: Ödeme açıklamasına sadece adınızı soyadınızı yazın.
+          Web sitemizin adını kesinlikle yazmayın.
+        </p>
+      </div>
+    </div>
+    <div class="row odeme justify-content-center">
+      <div class="col-11" style=" background-color: #ffffff;">
+        <h6>Ödeme Yapılacak Bankalar</h6>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button"
+            style="border-radius: 0px; width: 100%; border: 1px rgb(170, 170, 170) solid;" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Bankalar
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Garanti Bankası</a></li>
+            <li><a class="dropdown-item" href="#">Enpara</a></li>
+            <li><a class="dropdown-item" href="#">İş Bankası</a></li>
+            <li><a class="dropdown-item" href="#">Deniz Bank </a></li>
+            <li><a class="dropdown-item" href="#">Ziraat Bankası </a></li>
+            <li><a class="dropdown-item" href="#">Akbank </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row bankaBilgi justify-content-center">
+      <div class="col-11" style=" background-color: #ffffff;">
+        <div class="mt-3 p-3"
+          style="border: 1px solid #2C6A3A; border-radius: 5px 5px 0px 0px; background-color: #C3E6CB;">
+          <h6 style="color: #2C6A3A;">Banka Bilgileri</h6>
+        </div>
+        <div class="p-3" style="border: 1px solid #2C6A3A; border-radius: 0px ; background-color: #C3E6CB;">
+          <h6 style="color: #2C6A3A;">Hesap Sahibi: SEÇİM YAPINIZ</h6>
+        </div>
+        <div class="p-3"
+          style="border: 1px solid #2C6A3A; border-radius: 0px 0px 5px 5px; ; background-color: #C3E6CB;">
+          <h6 style="color: #2C6A3A;">Iban: SEÇİM YAPINIZ</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row bankaBilgi justify-content-center">
+      <div class="col-11" style="background-color: #ffffff; border-radius: 0px 0px 5px 5px;">
+        <form>
+          <div class="mt-3 adsoyad">
+            <p style="font-size: 14px; font-size: medium;  " for="ad" class="mx-1 form-label">
+              Ad Soyad
+            </p>
+            <input style="height: 42px;" type="text" class="form-control" placeholder="Ad Soyad giriniz..."
+              id="TelefonForm">
+          </div>
+          <div class="mt-3 telefon">
+            <p style="font-size: 14px; font-size: medium;  " for="telefonForm" class="mx-1 form-label  ">
+              Telefon
+            </p>
+            <input style="height: 42px;" type="number" class="form-control" placeholder="Telefon giriniz..."
+              id="TelefonForm">
+          </div>
+          <div class="mt-3 tutar">
+            <p style="font-size: 14px; font-size: medium;  " for="tutar" class="mx-1 form-label">
+              Tutar
+            </p>
+            <input style="height: 42px;" type="text" class="form-control" placeholder="Tutar girin..." id="TelefonForm">
+          </div>
+          <div class="mt-3 not">
+            <p style="font-size: 14px; font-size: medium;  " for="ad" class="mx-1 form-label">
+              Not
+            </p>
+            <input style="height: 42px;" type="text" class="form-control" placeholder="Varsa notunuz girin..."
+              id="TelefonForm">
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn-primary"
+              style="font-weight: bold; font-size: 17px; width: 100%; height: 50px;">Ödemeyi Yaptım</button>
+          </div>
+          <div class="d-flex justify-content-center mt-2 mb-3">
+            <button type="submit" class="btn btn-danger"
+              style="font-weight: bold; font-size: 17px; width: 100%; height: 50px;">Ödeme İşleminden Vazgeç</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1292 @@
+﻿@{
+    ViewData["Title"] = "Bahis";
+}
+
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="pc d-none d-md-none d-lg-block">
+    <div class="container-fluid ms-auto d-flex">
+        <!--SIDEBAR BASLANGIC SOL-->
+        <div class="col-2 sidebar">
+            <img src="~/img/1.gif">
+            <img src="~/img/2.gif">
+            <img src="~/img/3.gif">
+            <img src="~/img/4.gif">
+            <img src="~/img/kazandiran.gif">
+            <img src="~/img/espor.gif">
+            <div class="search-button">
+                <button><i class="fas fa-search"></i></button>
+                <span>Arama</span>
+            </div>
+            <div class="list-button">
+                <button><i class="far fa-circle-play"></i></button>
+                <span>Canlı</span>
+            </div>
+            <div class="list-button">
+                <button><i class="far fa-clock"></i></button>
+                <span>Gelecek Etkinlikler</span>
+            </div>
+            <div class="list-button">
+                <button><i class="fas fa-fire-flame-curved"></i></button>
+                <span>Popüler Etkinlikler</span>
+            </div>
+            <div class="list-button">
+                <button><i class="fas fa-ranking-star"></i></button>
+                <span>Sonuçlar Sayfası</span>
+            </div>
+            <div class="list-button" style="border:none;">
+                <button><i class="fas fa-calendar-days"></i></button>
+                <span>Canlı Takvim</span>
+            </div>
+
+            <!--ÜLKELER-->
+
+            <div class="list-button mt-2">
+                <button><i class="fas fa-link"></i></button>
+                <span>Favori Ligler</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/usa.png" class="align-middle"></button>
+                <span>NBA</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/eur.png" class="align-middle"></button>
+                <span>UEFA Şampiyonlar Ligi</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/eur.png" class="align-middle"></button>
+                <span>UEFA Avrupa Ligi</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/eur.png" class="align-middle"></button>
+                <span>UEFA Avrupa Konferans Ligi</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/tur.png" class="align-middle"></button>
+                <span>Türkiye Süper Lig</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/tur.png" class="align-middle"></button>
+                <span>Türkiye Kupası</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/tur.png" class="align-middle"></button>
+                <span>Türkiye TFF 1. Lig</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/eng.png" class="align-middle"></button>
+                <span>İngiltere Premier Lig</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/eng.png" class="align-middle"></button>
+                <span>İngiltere Championship</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/deu.png" class="align-middle"></button>
+                <span>Almanya Bundesliga</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/eng.png" class="align-middle"></button>
+                <span>Almanya Bundesliga 2</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/spa.png" class="align-middle"></button>
+                <span>İspanya La Liga</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/spa.png" class="align-middle"></button>
+                <span>İspanya La Liga 2</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/ita.png" class="align-middle"></button>
+                <span>İtalya Serie A</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/ita.png" class="align-middle"></button>
+                <span>İtalya Serie B</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/fra.png" class="align-middle"></button>
+                <span>Fransa Lig 1</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/fra.png" class="align-middle"></button>
+                <span>Fransa Lig 2</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/net.png" class="align-middle"></button>
+                <span>Hollanda Eredivisie</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/net.png" class="align-middle"></button>
+                <span>Hollanda Erste Divisie</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/por.png" class="align-middle"></button>
+                <span>Portekiz Premier Ligi</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/por.png" class="align-middle"></button>
+                <span>Portekiz 2. Ligi</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/bel.png" class="align-middle"></button>
+                <span>Belçika 1. Ligi</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/bel.png" class="align-middle"></button>
+                <span>Belçika 2. Ligi</span>
+            </div>
+            <div class="list-button" style="border:none;">
+                <button><img src="~/img/eur.png" class="align-middle"></button>
+                <span>Euroleague</span>
+            </div>
+
+            <!--SPORLAR-->
+            <div class="list-button mt-2">
+                <button><i class="fas fa-list"></i></button>
+                <span>Tüm Sporlar</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/football.svg"></button>
+                <span>Futbol</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/basketball.svg"></button>
+                <span>Basketbol</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/tennis.svg"></button>
+                <span>Tenis</span>
+            </div>
+            <div class="list-button">
+                <button><img src="~/img/baseball.webp"></button>
+                <span>Beyzbol</span>
+            </div>
+            <div class="list-button" style="border:none;">
+                <button><img src="~/img/cricket.png"></button>
+                <span>Kriket</span>
+            </div>
+            <!--YARDIM & DESTEK-->
+            <div class="list-button mt-2">
+                <button><i class="fas fa-shield"></i></button>
+                <span>Yardım & Destek</span>
+            </div>
+            <div class="list-button">
+                <button><i class="fa-regular fa-file-lines"></i></button>
+                <span>Bahis Kuralları</span>
+            </div>
+            <div class="list-button">
+                <button><i class="fa-sharp fa-solid fa-money-bills"></i></button>
+                <span>Bahis Bozdur</span>
+            </div>
+            <div class="list-button mb-3" style="border:none">
+                <button><i class="fa-solid fa-link"></i></button>
+                <span>Bahis Kombinesi Kuralları</span>
+            </div>
+        </div>
+
+        <!--CAROUSEL BAŞLANGIÇ-->
+
+        <div class="col-8" style="text-align: center;">
+            <div class="gameslist mt-2">
+                <div class="d-flex justify-content-center">
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/football.svg">
+                        <div class="mb-2 fw-semibold">
+                            Futbol
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/basketball.svg">
+                        <div class="mb-2 fw-semibold">
+                            Basketbol
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/tabletennis.svg">
+                        <div class="mb-2 fw-semibold">
+                            Masa Tenis
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/volleyball.svg">
+                        <div class="mb-2 fw-semibold">
+                            Voleybol
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/tennis.svg">
+                        <div class="mb-2 fw-semibold">
+                            Tenis
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/fifa.svg ">
+                        <div class="mb-2 fw-semibold">
+                            FIFA
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/nba.svg">
+                        <div class="mb-2 fw-semibold">
+                            NBA2k
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/baseball.svg">
+                        <div class="mb-2 fw-semibold">
+                            Beyzbol
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/cricket.svg">
+                        <div class="mb-2 fw-semibold">
+                            Kriket
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/icehockey.svg">
+                        <div class="mb-2 fw-semibold">
+                            Buz Hokeyi
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/handball.svg">
+                        <div class="mb-2 fw-semibold">
+                            Hentbol
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/e-icehockey.svg">
+                        <div class="mb-2 fw-semibold">
+                            E-Buz Hokeyi
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/e-tennis.svg">
+                        <div class="mb-2 fw-semibold">
+                            E-Tenis
+                        </div>
+                    </div>
+                    <div class="gamescss d-grid">
+                        <img class="gamesimg mx-auto" src="~/img/icons/e-volleyball.svg">
+                        <div class="mb-2 fw-semibold">
+                            E-Voleybol
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselExample" class="carousel slide carousel-fade mt-1" data-bs-ride="carousel"
+                style="width: 100%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/img/slide1.png" class="d-block img-fluid"
+                            style="height: 300px; width: 100%; object-fit: cover; ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/slide2.png" class="d-block img-fluid "
+                            style="height: 300px; width: 100%; object-fit: cover">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/slide3.png" class="d-block img-fluid "
+                            style="height: 300px; width: 100%; object-fit: cover  ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/slide4.png" class="d-block img-fluid "
+                            style="height: 300px; width: 100%; object-fit: cover  ">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="row" style="line-height: 40px; margin: 0 !important; border-bottom: #FFD43B solid 4px">
+                <div class="col-6" style="z-index: -1; background-color: #FFD43B; width: 50%; height: 40px;">
+                    <p style="font-size: 15px;">Canlı<sup>46</sup></p>
+                </div>
+                <div class="col-6 ms-auto" style="color: white; background-color: #282D38; width: 50% ; height: 40px;">
+                    <p style="font-size: 15px;">Yaklaşan Karşılaşmalar</p>
+                </div>
+            </div>
+            <div class="slider mt-2" style="max-width: 100%; overflow-x: auto; line-height: 35px; font-size: smaller;">
+                <div class="d-flex justify-content-center">
+                    <div class="slide slidecss" id="activeslide">Futbol</div>
+                    <div class="slide slidecss">Basketbol</div>
+                    <div class="slide slidecss">Masa Tenis</div>
+                    <div class="slide slidecss">Voleybol</div>
+                    <div class="slide slidecss">Tenis</div>
+                    <div class="slide slidecss">FIFA</div>
+                    <div class="slide slidecss">E-Football</div>
+                    <div class="slide slidecss">NBA2k</div>
+                    <div class="slide slidecss">Beyzbol</div>
+                    <div class="slide slidecss">Kriket</div>
+                    <div class="slide slidecss">Buz Hokeyi</div>
+                    <div class="slide slidecss">Hentbol</div>
+                    <div class="slide slidecss">CS:GO</div>
+                    <div class="slide slidecss">DOTA2</div>
+                    <div class="slide slidecss">Dart</div>
+                    <div class="slide slidecss">E-Buz Hokeyi</div>
+
+                </div>
+            </div>
+
+
+
+            <!--BAHİS BAŞLANGIÇ-->
+
+            <div class="float-start py-3 ms-1" style="color: #A6AAB6; font-size: small;">
+                Filtreler
+            </div>
+            <div class="d-inline-flex float-start align-items-center"
+                style="width: 100%; height: 35px; background-color: #181C27; color: #A6AAB6; font-size: smaller;">
+                <div class="ms-1">Müsabakalar</div>
+                <div class="d-inline-flex ms-auto" style="width: 74%;">
+                    <div style="width: 33.3%;" class="pb-2 d-flex flex-column align-items-center">
+                        <div class="text-center ">
+                            1x2
+                            <div style="font-size: x-small; line-height: 0%;">
+                                Normal Süre
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 33.3%;">
+                        <div class="text-center">
+                            Üst/Alt
+                            <div style="font-size: x-small; line-height: 0%;">
+                                Normal Süre
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 33.3%;">
+                        <div class="text-center">
+                            Her İki Takım Da Gol Atar
+                            <div style="font-size: x-small; line-height: 0%;">
+                                Normal Süre
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/tur.png" style="width: 35px;" class="p-2"> Türkiye Kupası</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center matchteams">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Besiktas JK</div>
+                        <div class="text-start">Konyaspor</div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +17 / 29', 1. Yarı</div>
+                    </div>
+                    <div style="width: 75%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                15.00
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-4">
+                            <div class="my-3">
+                                2.00
+                            </div>
+                        </div>
+                        <div style="width: 25px; color: #9C9CA2;" class="">
+                            <div style="margin-left: 5px; margin-top: 15px;">
+                                1.5
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-2">
+                            <div class="my-3">
+                                1.76
+                            </div>
+                        </div>
+                        <div class="matchbet3 ms-4">
+                            <div class="my-3">
+                                1.97
+                            </div>
+                        </div>
+                        <div style="height: 55px; width: 140px; background-color: #202530; border: #1D1F2B solid 1px;
+        border-bottom: #1D1F2B solid 4px; color: #FFD43B;" class="ms-2 me-2"
+                            onmouseover="this.style.backgroundColor='#FFD43B'; this.style.color='black'; this.style.cursor='pointer'"
+                            onmouseout="this.style.backgroundColor='#202530'; this.style.color='#FFD43B';">
+                            <div class="my-3">
+                                1.78
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/ita.png" style="width: 35px;" class="p-2"> İtalya Serie A</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center"
+                    style="width: 100%; height: 70px; margin-top: 2px; background-color: #373845; color: white; font-size: small;">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Lazio FC
+                        </div>
+                        <div class="text-start">AC Milan </div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +39 / 54', 2. Yarı</div>
+                    </div>
+                    <div style="width: 75%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                15.00
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-4">
+                            <div class="my-3">
+                                2.00
+                            </div>
+                        </div>
+                        <div style="width: 25px; color: #9C9CA2;" class="">
+                            <div style="margin-left: 5px; margin-top: 15px;">
+                                1.5
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-2">
+                            <div class="my-3">
+                                1.76
+                            </div>
+                        </div>
+                        <div class="matchbet3 ms-4">
+                            <div class="my-3">
+                                1.97
+                            </div>
+                        </div>
+                        <div style="height: 55px; width: 140px; background-color: #202530; border: #1D1F2B solid 1px;
+        border-bottom: #1D1F2B solid 4px; color: #FFD43B;" class="ms-2 me-2"
+                            onmouseover="this.style.backgroundColor='#FFD43B'; this.style.color='black'; this.style.cursor='pointer'"
+                            onmouseout="this.style.backgroundColor='#202530'; this.style.color='#FFD43B';">
+                            <div class="my-3">
+                                1.78
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/net.png" style="width: 35px;" class="p-2">Eredivisie</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center"
+                    style="width: 100%; height: 70px; margin-top: 2px; background-color: #373845; color: white; font-size: small;">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Feyenoord
+                        </div>
+                        <div class="text-start">Ajax</div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +39 / 54', 2. Yarı</div>
+                    </div>
+                    <div style="width: 75%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                15.00
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-4">
+                            <div class="my-3">
+                                2.00
+                            </div>
+                        </div>
+                        <div style="width: 25px; color: #9C9CA2;" class="">
+                            <div style="margin-left: 5px; margin-top: 15px;">
+                                1.5
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-2">
+                            <div class="my-3">
+                                1.76
+                            </div>
+                        </div>
+                        <div class="matchbet3 ms-4">
+                            <div class="my-3">
+                                1.97
+                            </div>
+                        </div>
+                        <div style="height: 55px; width: 140px; background-color: #202530; border: #1D1F2B solid 1px;
+        border-bottom: #1D1F2B solid 4px; color: #FFD43B;" class="ms-2 me-2"
+                            onmouseover="this.style.backgroundColor='#FFD43B'; this.style.color='black'; this.style.cursor='pointer'"
+                            onmouseout="this.style.backgroundColor='#202530'; this.style.color='#FFD43B';">
+                            <div class="my-3">
+                                1.78
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/spa.png" style="width: 35px;" class="p-2">La Liga </div>
+                </div>
+
+                <div class="d-inline-flex align-items-center"
+                    style="width: 100%; height: 70px; margin-top: 2px; background-color: #373845; color: white; font-size: small;">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Real Betis
+                        </div>
+                        <div class="text-start">Malaga FC</div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +39 / 54', 2. Yarı</div>
+                    </div>
+                    <div style="width: 75%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1">
+                            <div class="my-3">
+                                15.00
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-4">
+                            <div class="my-3">
+                                2.00
+                            </div>
+                        </div>
+                        <div style="width: 25px; color: #9C9CA2;" class="">
+                            <div style="margin-left: 5px; margin-top: 15px;">
+                                1.5
+                            </div>
+                        </div>
+                        <div class="matchbet2 ms-2">
+                            <div class="my-3">
+                                1.76
+                            </div>
+                        </div>
+                        <div class="matchbet3 ms-4">
+                            <div class="my-3">
+                                1.97
+                            </div>
+                        </div>
+                        <div style="height: 55px; width: 140px; background-color: #202530; border: #1D1F2B solid 1px;
+        border-bottom: #1D1F2B solid 4px; color: #FFD43B;" class="ms-2 me-2"
+                            onmouseover="this.style.backgroundColor='#FFD43B'; this.style.color='black'; this.style.cursor='pointer'"
+                            onmouseout="this.style.backgroundColor='#202530'; this.style.color='#FFD43B';">
+                            <div class="my-3">
+                                1.78
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--BAHİS BİTİŞ-->
+
+        </div>
+
+
+        <!--SIDEBAR BASLANGIC SAĞ-->
+        <div class="col-2 right-sidebar justify-content-center">
+            <div class="text-center justify-content-center ms-2"
+                style="height: 160px; width: 100%; background-color: #282C39; color:#DBD9E2">
+                <div style="min-height: 35px; background-color: #2E323E;">
+                    <i class="fa-solid fa-ticket justify-content-center float-start d-flex ms-2"
+                        style="color: #FFFFFF; line-height: 35px;"></i>
+                    <div class="float-start ms-2 d-flex" style="color: #FFFFFF; line-height: 35px;">
+                        Bahis kuponu</div>
+                    <div class="float-end me-2" style="font-size: 9pt; line-height: 35px;">
+                        <a href="#" style="color:#A4A9BC">Yardım</a>
+                    </div>
+                </div>
+                <div style="margin: 25px; font-size: 9pt;">
+                    Bahis kuponu boş
+                    <br>
+                    Bahis yapabilmek için, <a href="#" style="color: #DBD9E2;">kayıt ol</a> veya <a href="#"
+                        style="color:#DBD9E2">giriş</a> ve herhangi
+                    bir miktar seçin.
+                </div>
+            </div>
+
+            <div class="imggroup">
+                <img src="~/img/sag/sag.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag1.gif" class="blockimg float-end" style="display: flex;">
+                <img src="~/img/sag/sag2.gif" class="blockimg float-end" style="display: flex;">
+                <img src="~/img/sag/sag3.gif" class="blockimg float-end" style="display: flex;">
+                <img src="~/img/sag/sag4.gif" class="blockimg float-end" style="display: flex;">
+                <img src="~/img/sag/sag5.gif" class="blockimg float-end" style="display: flex;">
+                <img src="~/img/sag/sag6.gif" class="blockimg float-end" style="display: flex;">
+                <img src="~/img/sag/sag7.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag8.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag9.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag10.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag11.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag12.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag13.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag14.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag15.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag16.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag17.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag18.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag19.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag20.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag21.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag22.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag23.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag24.jpg" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag25.webp" class="ms-auto wideimg" style="display: flex; width: 100%;">
+                <img src="~/img/sag/sag26.jpg" class="ms-auto wideimg mb-2" style="display: flex; width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Turnuvalar -->
+    <div class="container-fluid" style="background-color: #181918;">
+        <div class="row d-flex mx-4 justify-content-center">
+            <p class="my-5" style="color: white; font-size: 26px;">46 Turnuva Oyunları</p>
+            <div class="col-2">
+                <img src="~/img/odullu1.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Big Bass Amazon Xt...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu2.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Big Bass Bonanza-...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu3.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Wisdom of Athena™</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu4.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Candy Blitz™</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu5.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Sugar Supreme Po...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu6.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Buffalo Power:Hol...</p>
+            </div>
+        </div>
+        <div class="row mx-4">
+            <div class="col-2">
+                <img src="~/img/odullu7.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Buffalo Power 2:Hol...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu8.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Book Of Gold:Multi...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu9.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Giza Nights:Hold a...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu10.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Hot Coins: Hold and...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu11.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Imperial Fruits: 5 li...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu12.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Legend of Cleopatr...</p>
+            </div>
+        </div>
+        <div class="row mx-4">
+            <div class="col-2">
+                <img src="~/img/odullu13.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Luxor Gold:Hold An...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu14.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Pirate Chest: Hold a...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu15.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Lion Gems:Hold an...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu16.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Royal Coins:Hold a...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu17.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Royal Coins 2:Hold ...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu18.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Royal Joker:Hold a...</p>
+            </div>
+        </div>
+        <div class="row mx-4">
+            <div class="col-2">
+                <img src="~/img/odullu19.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Royal Fortunator: H...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu20.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Wolf Land: Hold an...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu21.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Crown and Diamon...</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu22.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Sevens & Fruits</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu23.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Solar Queen</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu24.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Balloon</p>
+            </div>
+        </div>
+        <div class="row mx-4">
+            <div class="col-2">
+                <img src="~/img/odullu25.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Burning Ice</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu26.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Burning Ice 10</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu27.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Burning Ice 40</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu28.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Cappadocia</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu29.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Cricket x</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu30.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Football X</p>
+            </div>
+        </div>
+        <div class="row mx-4">
+            <div class="col-2">
+                <img src="~/img/odullu31.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Genie's Bonanza</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu32.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">JetX</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu33.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">JetX3</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu34.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Joker Buy Bonus</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu35.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Multi Hot 5</p>
+            </div>
+            <div class="col-2">
+                <img src="~/img/odullu36.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Double X</p>
+            </div>
+        </div>
+        <div class="row mx-4">
+            <div class="col-2">
+                <img src="~/img/odullu37.jpg" alt="" class="img-fluid d-flex justify-content-center">
+                <p style="color: white;">Coin Forge</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobil d-block d-sm-block d-md-none">
+    <div>
+        <div class="d-flex justify-content-center" style="width: 100%; background-color: #23262F;">
+            <div class="arama">
+                <button class="btn"
+                    style="color: #000000; border-radius: 0px; background-color: #FFD43B; font-size: 13px;">
+                    <i class="fa-regular fa-magnifying-glass fa-sm" style=" color: white;"></i>
+                    <span style="color: white;">Arama</span>
+                </button>
+            </div>
+            <div class="canli">
+                <button class="btn" style="font-size: 13px;">
+                    <i class="fa-light fa-circle-play fa-sm" style="color: white;"></i>
+                    <span style="color: white;">Canlı</span>
+                </button>
+            </div>
+            <div class="sporlar">
+                <button class="btn" style="font-size: 13px;">
+                    <i class="fa-regular fa-bars fa-sm" style=" color: white;"></i>
+                    <span style="color: white;">Sporlar</span>
+                </button>
+            </div>
+            <div class="ligler">
+                <button class="btn" style="font-size: 13px;">
+                    <i class="fa-regular fa-link-simple fa-sm" style=" color: white;"></i>
+                    <span style="color: white;">Ligler</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Games -->
+    <div class="games">
+        <div class="gameslist mt-2">
+            <div class="d-flex justify-content-center">
+                <div class="gamescss d-grid">
+                    <img class="gamesimg mx-auto" src="~/img/icons/football.svg">
+                    <div class="mb-2 fw-semibold">
+                        Futbol
+                    </div>
+                </div>
+                <div class="gamescss d-grid">
+                    <img class="gamesimg mx-auto" src="~/img/icons/basketball.svg">
+                    <div class="mb-2 fw-semibold">
+                        Basketbol
+                    </div>
+                </div>
+                <div class="gamescss d-grid">
+                    <img class="gamesimg mx-auto" src="~/img/icons/tabletennis.svg">
+                    <div class="mb-2 fw-semibold">
+                        Masa Tenis
+                    </div>
+                </div>
+                <div class="gamescss d-grid">
+                    <img class="gamesimg mx-auto" src="~/img/icons/volleyball.svg">
+                    <div class="mb-2 fw-semibold">
+                        Voleybol
+                    </div>
+                </div>
+                <div class="gamescss d-grid">
+                    <img class="gamesimg mx-auto" src="~/img/icons/tennis.svg">
+                    <div class="mb-2 fw-semibold">
+                        Tenis
+                    </div>
+                </div>
+                <div class="gamescss d-grid">
+                    <img class="gamesimg mx-auto" src="~/img/icons/icehockey.svg">
+                    <div class="mb-2 fw-semibold">
+                        Buz Hokeyi
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="container-fluid">
+            <div id="carouselExampleControls " class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/img/slide1.png" class="d-block w-100" height="250px" style="object-fit: cover;"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/slide2.png" class="d-block w-100" height="250px" style="object-fit: cover;"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/slide3.png" class="d-block w-100" height="250px" style="object-fit: cover;"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/slide4.png" class="d-block w-100" height="250px" style="object-fit: cover;"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" style=" text-align: center;">
+                <div class="col-6" style="height: 40px; line-height: 34px; background-color: #FFD43B;">
+                    <p>Canlı<sup>46</sup></p>
+                </div>
+                <div class="col-6"
+                    style="height: 40px; line-height: 34px; border-bottom: 4px solid #FFD43B; color: white; background-color: #282C39;">
+                    <p>Yaklaşan Kar...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bahis -->
+        <div class="bahis container-fluid">
+            <div class="filtreler float-start py-3 ms-1" style="color: #A6AAB6; font-size: small;">
+                Filtreler
+            </div>
+            <div class="müsabakalar d-inline-flex float-start align-items-center"
+                style="width: 100%; height: 35px; background-color: #181C27; color: #A6AAB6; font-size: smaller;">
+                <div class="ms-1">Müsabakalar</div>
+                <div class="d-inline-flex ms-auto" style="width: 74%;">
+                    <div style="width: 33.3%;" class="pb-2 d-flex flex-column align-items-center">
+                        <div class="text-center ">
+                            1x2
+                            <div style="font-size: x-small; line-height: 0%;">
+                                Normal Süre
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 33.3%;">
+                        <div class="text-center">
+                            Üst/Alt
+                            <div style="font-size: x-small; line-height: 0%;">
+                                Normal Süre
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 33.3%;">
+                        <div class="text-center">
+                            Her İki...
+                            <div style="font-size: x-small; line-height: 0%;">
+                                Normal Süre
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="turkiye">
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/tur.png" style="width: 35px;" class="p-2"> Türkiye Kupası</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center matchteams">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Besiktas JK</div>
+                        <div class="text-start">Konyaspor</div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +17 / 29', 1. Yarı</div>
+                    </div>
+
+                    <div style="width: 72%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet" style="text-align: center;">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="italya">
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/ita.png" style="width: 35px;" class="p-2"> İtalya Serise A</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center matchteams">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Lazio FC</div>
+                        <div class="text-start">AC Milan</div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +17 / 29', 1. Yarı</div>
+                    </div>
+
+                    <div style="width: 72%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet" style="text-align: center;">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="eradivise">
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/net.png" style="width: 35px;" class="p-2">Eradivise</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center matchteams">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Feyenord</div>
+                        <div class="text-start"></div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +17 / 29', 1. Yarı</div>
+                    </div>
+
+                    <div style="width: 72%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet" style="text-align: center;">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="laliga">
+                <div class="d-inline-flex float-start align-items-center"
+                    style="width: 100%; height: 35px; margin-top: 2px; background-color: #161B23; color: #ACB0B9; font-size: smaller;">
+                    <div class="ms-1"><img src="~/img/spa.png" style="width: 35px;" class="p-2">La Liga</div>
+                </div>
+
+                <div class="d-inline-flex align-items-center matchteams">
+                    <div class="ms-1" style="width: 25%;">
+                        <div class="text-start">Real Betis</div>
+                        <div class="text-start">Malaga FC</div>
+                        <div class="text-start"><i class="fa-brands fa-youtube"></i> +17 / 29', 1. Yarı</div>
+                    </div>
+
+                    <div style="width: 72%" class="d-inline-flex">
+                        <div class="d-block matchscore">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+                        <div class="matchbet" style="text-align: center;">
+                            <div class="my-3">
+                                1.19
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+                        <div class="matchbet ms-1" style="text-align: center;">
+                            <div class="my-3">
+                                5.50
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Casino -->
+        <div style="background-color: #191919;" class="casino container-fluid">
+
+            <!-- Top 20 -->
+            <div class="row mt-3">
+                <h6 class="mt-4" style="color: white;">Top 20 Canlı Casino</h6>
+                <div class="col-6 mt-3">
+                    <img src="~/img/canli1.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Turkish Roulette</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/canli2.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Salon Casino</p>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 mt-3">
+                    <img src="~/img/canli3.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">VIP Blackjack</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/canli4.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Sweet Bonanza</p>
+                </div>
+                <button class="btn btn-outline-warning mt-2" style="height: 50px; width: 230px;" type="button"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">Daha Fazla Göster</button>
+            </div>
+
+
+            <!-- Türkçe Rulet -->
+            <div class="row mt-4">
+                <h6 class="mt-4" style="color: white;">Türkçe Casino</h6>
+                <div class="col-6 mt-3">
+                    <img src="~/img/trcasino1.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">XXXtreme</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/trcasino2.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Lightning Rulet</p>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 mt-3">
+                    <img src="~/img/trcasino3.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Türkçe Blackjack</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/trcasino4.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Türkçe Blackjack 1</p>
+                </div>
+                <button class="btn btn-outline-warning mt-2" style="height: 50px; width: 230px;" type="button"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">Daha Fazla Göster</button>
+            </div>
+
+
+            <!-- Drop & Wins -->
+            <div class="row mt-4">
+                <h6 class="mt-4" style="color: white;">Drop & Wins</h6>
+                <div class="col-6 mt-3">
+                    <img src="~/img/drop1.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Boom City</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/drop2.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Sweet Bonanza</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 mt-3">
+                    <img src="~/img/drop3.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Mega Çark</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/drop4.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Andar Bahar</p>
+                </div>
+                <button class="btn btn-outline-warning mt-2" style="height: 50px; width: 230px;" type="button"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">Daha Fazla Göster</button>
+            </div>
+
+
+            <!-- Evolution Gaming -->
+            <div class="row mt-4">
+                <h6 class="mt-4" style="color: white;">Evoulation Gaming</h6>
+                <div class="col-6 mt-3">
+                    <img src="~/img/evolution1.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Carzy Pachinko</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/evolution2.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Red Door Roulette</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 mt-3">
+                    <img src="~/img/evolution3.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">XXXtreme Lightning</p>
+                </div>
+                <div class="col-6 mt-3">
+                    <img src="~/img/evolution4.jpg" class="card" style="border:none; border-radius: 10px; width: 100%;"
+                        alt="">
+                    <p style="text-align: center; color: white;">Lightnin Lotto</p>
+                </div>
+                <button class="btn btn-outline-warning mt-2 mb-4" style="height: 50px; width: 230px;" type="button"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">Daha Fazla Göster</button>
+            </div>
+        </div>
+    </div>
+</div>

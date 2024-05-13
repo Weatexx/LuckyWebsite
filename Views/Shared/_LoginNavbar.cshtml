@@ -1,0 +1,276 @@
+<div class="pc d-none d-md-none d-lg-block">
+    <!-- Navbar -->
+    <div class="container-fluid" style="border-bottom: 4px solid #FFD43B; width: 100%;">
+        <nav class="navbar navbar-light sticky-top" style="background-color: #121623; width: 100%;">
+            <div class="row">
+                <div class="col-2 d-flex align-items-center justify-content-center">
+                    <a class="navbar img-fluid img-logo" href="/Login/Index"><img src="~/img/logo.png"
+                            style="position: relative; width: 100px; height: 50px;"></a>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="d-flex align-items-center gap-2 justify-content-end">
+                                <a href="#"><i class="fa-brands fa-square-whatsapp"
+                                        style="color: #FFD43B; font-size: 43px;"></i></a>
+                                <a href="#"><i class="fa-thin fa-square-phone py-2"
+                                        style="color: #FFD43B; font-size: 43px;"></i></a>
+                                <button class="btn btn-warning " type="button" onClick="parent.location='#'"
+                                    style="font-weight: bold;  color: #121623;">00,0 TL</button>
+                                <!-- Profil butonunu bir dropdown'a dönüştür -->
+                                <button class="profil btn btn-warning dropdown-toggle" type="button" id="profilDropdown"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="font-weight: bold; color: #121623;">
+                                    <i class="fa-solid fa-user"></i>
+                                </button>
+
+                                <!-- Dropdown menüsü -->
+                                <div class="dropdown-menu"
+                                    style="width: 350px; height: 450px; margin-top: 490px; border-radius: 0%;"
+                                    aria-labelledby="profilDropdown">
+                                    <div class="bakiye d-flex justify-content-center"
+                                        style="border: 1px solid #FFD43B; text-align: center;  background-color: #121623; color: white;">
+                                        <div class="row">
+                                            <div class="mt-4 col-4">
+                                                <p><b>Bakiyeniz</b><br> 0.00₺</p>
+                                            </div>
+                                            <div class="mt-2 col-4">
+                                                <p><b>Bonus<br>Bakiyeniz</b><br> 0.00₺</p>
+                                            </div>
+                                            <div class="mt-2 col-4">
+                                                <p><b>Toplam Bakiyeniz</b><br> 0.00₺</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ikonlar d-flex justify-content-center"
+                                        style="text-align: center; height: 244px;">
+                                        <div class="row mt-3 mx-2">
+                                            <div class="col-3">
+                                                <a href="Odemeler" class="text-decoration-none text-dark"><i
+                                                        style="font-size: 25px;"
+                                                        class="fa-sharp fa-solid fa-hand-holding-dollar"></i>
+                                                    <p>Para Yatır</p>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-solid fa-money-from-bracket"></i>
+                                                <p>Para Çek</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-regular fa-gift"></i>
+                                                <p>Aktif Bonuslar</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-sharp fa-regular fa-gifts"></i>
+                                                <p>Geçmiş Bonuslarım</p>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-solid fa-futbol"></i>
+                                                <p>Spor Geçmişim</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-light fa-calendar-days"></i>
+                                                <p>Oyun Geçmişim</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-sharp fa-light fa-clipboard"></i>
+                                                <p>Hesap Özetim</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <i style="font-size: 25px;" class="fa-sharp fa-regular fa-book"></i>
+                                                <p>Bahis Kuralları</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bakiye align-items-center justify-content-center d-flex"
+                                        style="height: 50px; text-align: center;  color: white;">
+                                        <div class="row">
+                                            <div class="mt-3 mb-3 col-12">
+                                                <button class="btn" type="button"
+                                                    style="font-weight: bold; background-color: white; border: 2px solid black; border-radius: 10px; color: #121623;">ÇIKIŞ
+                                                    YAP</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <header class="d-flex justify-content-center" style="border-top: 1px solid #353945; ">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100 fs-6">Poker Klas</div>
+                                </a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100 fs-6">Aviator</div>
+                                </a>
+                                <a href="/Login/Index" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Bahis</div>
+                                </a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Canlı Bahis</div>
+                                </a>
+                                <a href="/Login/OzelOran" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Özel Oran</div>
+                                </a>
+                                <a href="/Login/CanliCasino" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Canlı Casino</div>
+                                </a>
+                                <a href="/Login/Casino" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Casino</div>
+                                </a>
+                                <a href="/Login/OdulluOyunlar" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Ödüllü Oyunlar</div>
+                                </a>
+                                <a href="/Login/Tombala" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Tombala</div>
+                                </a>
+                                <a href="/Login/Turnuvalar" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Turnuvalar</div>
+                                </a>
+                                <a href="/Login/OzelTurnuvalar" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Özel Turnuvalar</div>
+                                </a>
+                                <a href="/Contact" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Sizi Arayalım</div>
+                                </a>
+                                <a href="https://holigan8.app" class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Holi App</div>
+                                </a>
+                                <a href="https://holiganbetpartners3.com"
+                                    class="text-white navButon text-decoration-none">
+                                    <div class="mx-2 my-2 w-100" style="font-size: 16px;">Affiliates</div>
+                                </a>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="mobil d-block d-sm-block d-md-none">
+    <!-- Navbar -->
+    <nav style="border-bottom: solid 4px #FFD43B; color: white ; background-color: #121623;" class="navbar">
+        <div class="container-fluid" style="color: white;">
+            <a class="navbar-brand img-fluid" href="/Login/Index"><img src="~/img/logo.png" width="90" height="50"></a>
+            <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="#">Aviator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/Index">Bahis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="#">Canlı Bahis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="/Login/OzelOran">Özel
+                            Oran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/CanliCasino">Canlı
+                            Casino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/Casino">Casino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/OdulluOyunlar">Ödüllü
+                            Oyunlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/Tombala">Tombala</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/Turnuvalar">Turnuvalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="/Login/OzelTurnuvalar">Özel
+                            Turnuvalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="/Contact">Sizi
+                            Arayalım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="#">HoliApp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="#">Affiliates</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- App Bar -->
+    <div class="container-fluid">
+        <div class="fixed-bottom d-flex justify-content-center"
+            style="background-color: #121623; gap: 11px; border-radius: 10px 10px 0 0;">
+            <div class="mt-3 mb-2 text-center">
+                <a href="" style="text-decoration: none;">
+                    <i class="fa-solid fa-lg fa-messages-question" style="color: #FFD43B;"></i><br>
+                    <span style="color: white; font-size: 10px;">Canlı Destek</span>
+                </a>
+            </div>
+
+            <div class="mt-3 mx-2 mb-2 text-center">
+                <a href="/Login/Index" style="text-decoration: none;">
+                    <i class="fa-thin fa-slot-machine" style="color: #FFD43B;"></i><br>
+                    <span style="color: white; font-size: 10px;">Casino</span>
+                </a>
+            </div>
+
+            <div class="mt-3 mb-2 text-center">
+                <i class="fa-sharp fa-solid fa-grid-2" style="font-size: 40px; color: #FFD43B;"></i>
+            </div>
+
+            <div class="mt-3 mb-2 text-center">
+                <a href="/Login/CanliCasino" style="text-decoration: none;">
+                    <i class="fa-duotone fa-lg fa-ferris-wheel" style="color: #FFD43B;"></i><br>
+                    <span style="color: white; font-size: 10px;">Canlı Casino</span>
+                </a>
+            </div>
+
+            <div class="mt-3 mb-2 text-center ">
+                <a href="/Login/Odemeler" class="text-decoration-none">
+                    <i class="fa-regular fa-lg fa-money-bill" style="color: #FFD43B;"></i><br>
+                    <span style="color: white; font-size: 10px;">Bakiye</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function bakiyePopup() {
+        Swal.fire({
+            title: 'Bakiye Yetersiz!',
+            text: 'İşlemi gerçekleştirebilmek için yeterli bakiyeniz bulunmamaktadır.',
+            icon: 'error',
+            confirmButtonText: 'Tamam'
+        }
+    });
+</script>

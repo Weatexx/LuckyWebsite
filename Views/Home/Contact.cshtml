@@ -1,0 +1,48 @@
+@model holiganbet.Models.ViewModels.ContactsVM
+
+@{
+    Layout = "";
+}
+
+<body style="background-color: black;">
+
+    <img src="img/top-pattern.svg" style="margin-top: -25%; width: 100%;">
+
+    <div class="p-4">
+        <div style="margin: auto; width: 600px; height: 550px; border: white solid 4px; padding: 3%;">
+            <div style="border-bottom: 3px solid #FFD43B;">
+                <img style="width: 100%;" class="mb-4" src="img/logo2.png">
+            </div>
+            <div>
+                <h1 class="text-center text-white">
+                    Sizi Aramamızı İster Misiniz?
+                </h1>
+                <p class="text-center" style="color:red; font-size: large;">
+                    Lütfen telefon numaranızı, kullanıcı adınızı veya isminizi giriniz.
+                </p>
+            </div>
+            <div>
+                <form method="post">
+                    @Html.AntiForgeryToken()
+                    <!-- Ad ve Soyad Alanı -->
+                    <input asp-for="Namesurname" type="text" placeholder="Ad Soyad"
+                        style="width: 100%; padding: 10px; margin-bottom: 20px; border: 2px solid  #FCC540; border-radius: none; background-color: black; color: white; outline: none;">
+                    <span asp-validation-for="Namesurname" class="text-danger"></span>
+
+                    <!-- Telefon Numarası Alanı -->
+                    <input asp-for="Phone" type="tel" placeholder="Telefon Numarası"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style=" width: 100%; padding: 10px; margin-bottom: 20px; border: 2px solid #FCC540;
+                        border-radius: none; background-color: black; color: white; outline: none;">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+
+                    <!-- Gönder Butonu -->
+                    <button type="submit"
+                        style="background-color:  #FCC540; padding: 10px 20px; border: none; color: black; cursor: pointer; display: block; margin: 4% auto;">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <img src="img/bottom-pattern.svg" style="width: 100%; position: fixed;">
+
+</body>

@@ -1,0 +1,615 @@
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="pc d-none d-md-none d-lg-block mb-5">
+    <!-- Ödeme Yöntemleri -->
+    <div class="container-fluid justify-content-center mt-5"
+        style=" background-color: white; width: 1100px; height: 100%;">
+        <div class="row justify-content-center">
+
+            <div class="col-2 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale1.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Havale
+                        <br> Anında <br> TRY 500 - 10000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale2.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Havale
+                        <br> Anında <br> TRY 200 - 80000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/kripto.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kripto
+                        <br> Anında <br> TRY 200 - 500000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/payFix.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">PayFix
+                        <br> Anında <br> TRY 200 - 100000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/mefete.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">MEFETE
+                        <br> Anında <br> TRY 100 - 100000
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/pep.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Pep
+                        <br> Anında <br> TRY 100 - 125000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara1.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Papara
+                        <br> Anında <br> TRY 100 - 50000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/payFix.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">PayFix
+                        <br> Manuel <br> TRY 100 - 100000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara2.png.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Oto
+                        Papara
+                        <br> Anında <br> TRY 10 - 500000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/fastOtoPapara.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Papara
+                        FAST
+                        <br> Anında <br> TRY 500 - 10000
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/papara3.png.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        Hızlı Papara<br> Anında <br> TRY 500 - 5000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara4.png.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        Papara
+                        <br> Anında <br> TRY 100 - 30000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/hızlıQrGaranti.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Hızlı
+                        QR <br> Manuel <br> TRY 100 - 5000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/anındaMefete.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Anında
+                        Mefete<br> Anında <br> TRY 5 - 20000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/paratransfer.html"><img src="~/img/odeme/havale8.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Süper
+                        Havale <br> Anında <br> TRY 50 - 10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/paratransfer.html"><img src="~/img/odeme/jetHavale.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Jet
+                        Havale<br> Anında <br> TRY 500 - 10000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik7.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Fast
+                        Havale <br> Anında <br> TRY 150 - 30000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale1.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Havale
+                        <br> Anında <br> TRY 50 - 5000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale3.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        Havale<br> Anında <br> TRY 50 - 50000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale4.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Anında
+                        Havale <br> Anında <br> TRY 50 - 50000</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/maksiBanka.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        maksiBanka<br> Anında <br> TRY 500 - 5000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/kolayHavale.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kolay
+                        Havale
+                        <br> Anında <br> TRY 100 - 30000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/envoyHızlıHavale.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Envoy
+                        Havale<br> Manuel <br> TRY 100 - 5000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/tether.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        Tether<br> Anında <br> TRY 5 - 20000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/kriptoPara.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        KriptoPara<br> Anında <br> TRY 50 - 10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik1.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı<br> Anında <br> TRY 50 - 2000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik2.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Anında <br> TRY 100 - 20000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik3.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Manuel <br> TRY50 - 1250</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik4.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Anında <br> TRY 50 - 1500</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik5.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Anında <br> TRY 50 - 2500</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik6.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı<br> Anında <br> TRY 50 - 1500</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/fastKrediKartı.png"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Fast
+                        Kredi Kartı <br> Anında <br> TRY 50 - 3000</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/EnvoyKrediKartı.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Envoy
+                        Kredi Kartı <br> Manuel <br> TRY 50 - 1250</p>
+                </div>
+            </div>
+            <div class="col-2 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/maksiPapara.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        maksiPapara
+                        <br> Anında <br> TRY 50 - 50000
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 mb-5 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 170px; height: 130px;">
+                    <img src="~/img/odeme/youPay.png" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        YouPay
+                        Kripto
+                        <br> Anında <br> EUR 10 - 25000
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobil d-block d-sm-block d-md-none">
+    <!-- Ödeme Yöntemleri -->
+    <div class="container-fluid justify-content-center mt-5"
+        style=" background-color: white; width: 100%; height: 100%;">
+
+        <div class="row justify-content-center">
+
+            <div class="col-6 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale1.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Havale
+                        <br> Anında <br> TRY 500 - 10000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale2.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Havale
+                        <br> Anında <br> TRY 200 - 80000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/kripto.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kripto
+                        <br> Anında <br> TRY 200 - 500000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/payFix.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">PayFix
+                        <br> Anında <br> TRY 200 - 100000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/mefete.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">MEFETE
+                        <br> Anında <br> TRY 100 - 100000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/pep.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Pep
+                        <br> Anında <br> TRY 100 - 125000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara1.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Papara
+                        <br> Anında <br> TRY 100 - 50000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/payFix.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">PayFix
+                        <br> Manuel <br> TRY 100 - 100000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara2.png.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Papara
+                        <br> Anında <br> TRY 10 - 500000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/fastOtoPapara.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Papara
+                        FAST
+                        <br> Anında <br> TRY 500 - 10000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 1100%70px; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara3.png.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        Hızlı Papara<br> Anında <br> TRY 500 - 5000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Papara"><img src="~/img/odeme/papara4.png.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Papara
+                        <br> Anında <br> TRY 100 - 30000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/hızlıQrGaranti.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Hızlı
+                        QR <br> Manuel <br> TRY 100 - 5000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/anındaMefete.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Anında
+                        Mefete<br> Anında <br> TRY 5 - 20000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/havale8.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Süper
+                        Havale <br> Anında <br> TRY 50 - 10000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/jetHavale.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Jet
+                        Havale<br> Anında <br> TRY 500 - 10000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik7.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Fast
+                        Havale <br> Anında <br> TRY 150 - 30000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale1.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Havale
+                        <br> Anında <br> TRY 50 - 5000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale3.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        Havale<br> Anında <br> TRY 50 - 50000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/havale4.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Anında
+                        Havale <br> Anında <br> TRY 50 - 50000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/maksiBanka.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        maksiBanka<br> Anında <br> TRY 500 - 5000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/kolayHavale.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kolay
+                        Havale
+                        <br> Anında <br> TRY 100 - 30000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/envoyHızlıHavale.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Envoy
+                        Havale
+                        <br> Manuel <br> TRY 100 - 5000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/tether.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Tether
+                        <br> Anında <br> TRY 5 - 20000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/kriptoPara.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        KriptoPara <br> Anında <br> TRY 50 - 10000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik1.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı<br> Anında <br> TRY 50 - 2000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik2.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Anında <br> TRY 100 - 20000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik3.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Manuel <br> TRY50 - 1250</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik4.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Anında <br> TRY 50 - 1500</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik5.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı <br> Anında <br> TRY 50 - 2500</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/kredik6.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Kredi
+                        Kartı<br> Anında <br> TRY 50 - 1500</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <a href="Odemeler/Havale"><img src="~/img/odeme/fastKrediKartı.png" class="img-fluid"
+                            style="padding-inline: 19%; padding-top: 5px;"></a>
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Fast
+                        Kredi Kartı <br> Anında <br> TRY 50 - 3000</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/EnvoyKrediKartı.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">Envoy
+                        Kredi Kartı <br> Manuel <br> TRY 50 - 1250</p>
+                </div>
+            </div>
+            <div class="col-6 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/maksiPapara.png" class="img-fluid"
+                        style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">
+                        maksiPapara <br> Anında <br> TRY 50 - 50000
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 mb-5 mt-2">
+                <div class="box" style="background-color: #F3F7FA; width: 100%; height: 130px;">
+                    <img src="~/img/odeme/youPay.png" class="img-fluid" style="padding-inline: 19%; padding-top: 5px;">
+                    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 13px;">YouPay
+                        Kripto <br> Anında <br> EUR 10 - 25000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
