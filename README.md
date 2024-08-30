@@ -1,5 +1,4 @@
-Arda Koray Kartal - Metin Arda Kantarcı - Ramazan Çınar Göksu - Emir Sıbıç
-
+Arda Koray Kartal
 (TR)
 Frontend, Backend ve Database'i yazılmış Web sitesi.
 Site tamamiyle birebir yazılmış, kopyalama aracı ve benzeri araçlar kullanılmamıştır.
