@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Sunucu:                       127.0.0.1
--- Sunucu sürümü:                8.2.0 - MySQL Community Server - GPL
+-- Sunucu sürümü:                8.0.31 - MySQL Community Server - GPL
 -- Sunucu İşletim Sistemi:       Win64
 -- HeidiSQL Sürüm:               12.4.0.6659
 -- --------------------------------------------------------
@@ -51,9 +51,9 @@ CREATE TABLE IF NOT EXISTS `login` (
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin5;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin5;
 
--- holigan_db.login: 0 rows tablosu için veriler indiriliyor
+-- holigan_db.login: 12 rows tablosu için veriler indiriliyor
 /*!40000 ALTER TABLE `login` DISABLE KEYS */;
 INSERT INTO `login` (`id`, `username`, `password`) VALUES
 	(1, 'Testuser', '123456'),
@@ -64,7 +64,10 @@ INSERT INTO `login` (`id`, `username`, `password`) VALUES
 	(6, 'test', '12356'),
 	(7, 'test', '1234'),
 	(8, 'test1', '123455'),
-	(9, 'test', '1234');
+	(9, 'test', '1234'),
+	(10, 'test', '1234'),
+	(11, 'test', '1234'),
+	(12, 'test', '1234');
 /*!40000 ALTER TABLE `login` ENABLE KEYS */;
 
 -- tablo yapısı dökülüyor holigan_db.offer
@@ -76,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `offer` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin5;
 
--- holigan_db.offer: 0 rows tablosu için veriler indiriliyor
+-- holigan_db.offer: 1 rows tablosu için veriler indiriliyor
 /*!40000 ALTER TABLE `offer` DISABLE KEYS */;
 INSERT INTO `offer` (`id`, `username`, `moneyamount`, `datetime`) VALUES
 	(2, 'Ahmet', '200', '2024-03-03 02:46:01');
